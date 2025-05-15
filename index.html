@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>SmartFix Serwis</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>SmartFix Serwis</h1>
+    <p>Profesjonalna naprawa iPhone'ów</p>
+  </header>
+
+  <section id="kontakt">
+    <h2>Dane kontaktowe</h2>
+    <p><strong>Telefon:</strong> <span id="telefon">501 808 926</span></p>
+    <p><strong>Email:</strong> <span id="email">smartfixserwis.pl@gmail.com</span></p>
+  </section>
+
+  <section id="telefony">
+    <h2>Modele iPhone i naprawy</h2>
+    <div class="karta">
+      <img src="img/iphone13pro.jpg" alt="iPhone 13 Pro" />
+      <h3>iPhone 13 Pro</h3>
+      <ul>
+        <li>Wymiana ekranu – 800 zł</li>
+        <li>Wymiana baterii – 350 zł</li>
+        <li>Wymiana plecków – 400 zł</li>
+      </ul>
+    </div>
+    <!-- Można dodać więcej modeli tutaj -->
+  </section>
+
+  <section id="edycja">
+    <h2>Edycja danych</h2>
+    <form onsubmit="zmienDane(); return false;">
+      <label>Telefon: <input type="text" id="nowyTelefon"/></label><br/>
+      <label>Email: <input type="text" id="nowyEmail"/></label><br/>
+      <button type="submit">Zapisz</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
+    
